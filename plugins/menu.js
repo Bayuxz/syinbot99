@@ -38,15 +38,15 @@ const defaultMenu = {
   before: `
 ╔════════════════╗
 ╠➤👤𝙊𝙬𝙣𝙚𝙧 : ${global.ownername}
-╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : 𝙂𝙚𝙢𝙥𝙮
+╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : 𝙱𝚊𝚢𝚇𝚉
 ╠➤⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
 ╠➤🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
 ╚═══════╦════════╝
 ╔═══════╩════════╗
-║ 〘𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙼𝚄〙
+║ 〘𝒀𝒐𝒖𝒓 𝒑𝒓𝒐𝒇𝒊𝒍𝒆〙
 ╠❥📈𝙻𝚒𝚖𝚒𝚝 : %limit
-╠❥🥀𝙻𝚎𝚟𝚎𝚕 : %level
-╠❥🤺𝙴𝚡𝚙   : %exp
+╠❥✨𝙻𝚎𝚟𝚎𝚕 : %level
+╠❥🎊𝙴𝚡𝚙   : %exp
 ╠════════════════╝
 %readmore`.trimStart(),
   header: '╠♨ %category ♨',
@@ -158,7 +158,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
-    conn.sendHydrated(m.chat, text.trim(), 'ℙ𝔼𝕄𝔹𝕌𝔸𝕋 𝕊ℂ ➢ 𝔾𝔼𝕄ℙ𝕐', null, 'https://www.youtube.com/channel/UCZoVmApPxtLYgUWwBD4nbCw', 'ʏᴏᴜᴛᴜʙᴇ ɢᴇᴍᴘʏ', '', '', [
+    conn.sendHydrated(m.chat, text.trim(), 'ℙ𝔼𝕄𝔹𝕌𝔸𝕋 𝕊ℂ ➢ 𝙱𝚊𝚢𝚇𝚉', null, 'https://youtube.com/channel/UCvR7ud3DmDhFfQtn15gr4nQ', 'ʏᴏᴜᴛᴜʙᴇ bayxz', '', '', [
       ['𝗚𝗥𝗨𝗣 𝗕𝗢𝗧', '/donasi'],
       ['𝗝𝗔𝗦𝗔 𝗥𝗨𝗡', '/sewa'],
       ['✿𝗢𝗪𝗡𝗘𝗥✿', '/owner']
@@ -172,11 +172,11 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                         hydratedTemplate: {
                             imageMessage: message.imageMessage,
                             hydratedContentText: text.trim(),
-                            hydratedFooterText:'Ⓟ premium | Ⓛ limit',
+                            hydratedFooterText:'syinxd | bayxz',
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Website',
-                                    url: 'https://arivpns.github.io/'
+                                    displayText: 'Discord',
+                                    url: 'https://discord.gg/GXWDJBTW'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -185,7 +185,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
                                 }
                             }, {
                                 quickReplyButton: {
-                                    displayText: 'Sewa',
+                                    displayText: 'SewaBot',
                                     id: '/sewa'
                                 }  
                             }, {
@@ -223,17 +223,17 @@ function clockString(ms) {
 
 function ucapan() {
         const hour_now = moment.tz('Asia/Jakarta').format('HH')
-        var ucapanWaktu = 'Pagi kak'
+        var ucapanWaktu = 'Pagi sir'
         if (hour_now >= '03' && hour_now <= '10') {
-          ucapanWaktu = 'Pagi kak'
+          ucapanWaktu = 'Pagi sir'
         } else if (hour_now >= '10' && hour_now <= '15') {
-          ucapanWaktu = 'Siang kak'
+          ucapanWaktu = 'Siang sir'
         } else if (hour_now >= '15' && hour_now <= '17') {
-          ucapanWaktu = 'Sore kak'
+          ucapanWaktu = 'Sore sir'
         } else if (hour_now >= '17' && hour_now <= '18') {
-          ucapanWaktu = 'Selamat Petang kak'
+          ucapanWaktu = 'Selamat sore sir'
         } else if (hour_now >= '18' && hour_now <= '23') {
-          ucapanWaktu = 'Malam kak'
+          ucapanWaktu = 'Malam sir'
         } else {
           ucapanWaktu = 'Selamat Malam!'
         }	
