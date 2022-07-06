@@ -944,8 +944,8 @@ conn.ws.on('CB:call', async (json) => {
 
 global.dfail = (type, m, conn) => {
     let msg = {
-        rowner: 'Perintah ini hanya dapat digunakan oleh _*GEMPY*_',
-        owner: 'Perintah ini hanya dapat digunakan oleh _*GEMPY*_!',
+        rowner: 'Perintah ini hanya dapat digunakan oleh _*BayXZ*_',
+        owner: 'Perintah ini hanya dapat digunakan oleh _*BayXZ*_!',
         mods: 'Perintah ini hanya dapat digunakan oleh _*Moderator*_ !',
         premium: '*Undang Bot+Premium*\n1 Bulan *Rp10.000*\n2bulan *Rp15.000*\n\nKetik .sewa kalau minat..', 
         banned: 'Perintah ini hanya untuk pengguna yang terbanned..',
@@ -954,7 +954,7 @@ global.dfail = (type, m, conn) => {
         admin: 'Perintah ini hanya untuk *Admin* grup!',
         botAdmin: 'Jadikan bot sebagai *Admin* untuk menggunakan perintah ini!',
         unreg: 'Silahkan daftar untuk menggunakan fitur ini dengan cara mengetik:\n\n*#daftar nama.umur*\n\nContoh: *#daftar Manusia.16*',
-        restrict: 'Fitur ini di *disable*!'
+        restrict: 'Fitur ini sedang *nonaktif*!'
     }[type]
     if (msg) return m.reply(msg)
 }
